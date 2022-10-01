@@ -5,8 +5,6 @@ let contador = 0
 let salir = 0
 
 
-const t = new Tree()
-
 function insertar_num(nodo, numero){
 
     if (!nodo.valor){
@@ -36,8 +34,6 @@ do {
                 
                 numero[contador] = prompt("Ingrese el " + Number(contador+1) + "° numero o signo matematico (En orden): \n Escribe 'Listo' para salir")
                
-                t.add(numero[contador])
-                console.log(t)
                 contador++
 
                 if (numero[contador-1] == "listo"){
